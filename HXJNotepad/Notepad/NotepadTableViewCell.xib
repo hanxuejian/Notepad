@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="notepadCellIdentifier" id="KGk-i7-Jjw" customClass="NotepadTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="748" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" userLabel="ContentView">
+                <rect key="frame" x="0.0" y="0.0" width="748" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016年8月23日  15:29" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ5-bc-DA6">
+                        <rect key="frame" x="10" y="10" width="200" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="IQR-Ff-gIA"/>
+                            <constraint firstAttribute="height" constant="20" id="YuF-5Y-eeO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是问题便签中的文本便签" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDv-4R-iw2">
+                        <rect key="frame" x="20" y="40" width="608" height="99.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zu-Tc-U7T" userLabel="voiceButton">
+                        <rect key="frame" x="20" y="40" width="300" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9dn-3D-qTZ"/>
+                            <constraint firstAttribute="width" priority="750" constant="300" id="bST-cE-z99"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClickedOfAudioPlayer:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ytz-j3-USu"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A49-Fi-Uzd" userLabel="imageButton">
+                        <rect key="frame" x="20" y="40" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="UcO-kB-iPY"/>
+                            <constraint firstAttribute="width" constant="100" id="wnQ-sI-69g"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClickedOfImage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iLu-2P-q9E"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-pU-1rm" userLabel="videoButton">
+                        <rect key="frame" x="20" y="40" width="100" height="99.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="5ZI-vy-4mE"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClickedOfVideo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Dg-aM-GgH"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grZ-9j-Enu" userLabel="deleteButton">
+                        <rect key="frame" x="648" y="55" width="60" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="fxQ-jz-fjY"/>
+                            <constraint firstAttribute="width" constant="60" id="kDi-Au-yNQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClickedOfdelete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Sg3-hj-Tx2"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-J0-KqL" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="147.5" width="748" height="1"/>
+                        <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mD8-Vi-Y4p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="grZ-9j-Enu" secondAttribute="trailing" constant="20" id="4Pg-h9-XlW"/>
+                    <constraint firstItem="yJ5-bc-DA6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6aP-YR-caE"/>
+                    <constraint firstItem="grZ-9j-Enu" firstAttribute="leading" secondItem="YDv-4R-iw2" secondAttribute="trailing" constant="20" id="7N8-p9-JQi"/>
+                    <constraint firstItem="YDv-4R-iw2" firstAttribute="top" secondItem="yJ5-bc-DA6" secondAttribute="bottom" constant="10" id="7T6-KI-9ik"/>
+                    <constraint firstItem="9Zu-Tc-U7T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Bbp-JS-ZTG"/>
+                    <constraint firstItem="BWm-pU-1rm" firstAttribute="top" secondItem="yJ5-bc-DA6" secondAttribute="bottom" constant="10" id="EgZ-6w-JEx"/>
+                    <constraint firstItem="9Zu-Tc-U7T" firstAttribute="top" secondItem="yJ5-bc-DA6" secondAttribute="bottom" constant="10" id="FEO-kl-Zft"/>
+                    <constraint firstItem="EeU-J0-KqL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="H6y-vO-j4S"/>
+                    <constraint firstAttribute="bottom" secondItem="YDv-4R-iw2" secondAttribute="bottom" constant="10" id="Ji0-EB-EnD"/>
+                    <constraint firstItem="grZ-9j-Enu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mjj-73-uwc"/>
+                    <constraint firstItem="A49-Fi-Uzd" firstAttribute="top" secondItem="yJ5-bc-DA6" secondAttribute="bottom" constant="10" id="Put-7N-Jr5"/>
+                    <constraint firstItem="YDv-4R-iw2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="awL-Uf-zEQ"/>
+                    <constraint firstItem="A49-Fi-Uzd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="bwL-JW-aWy"/>
+                    <constraint firstItem="grZ-9j-Enu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Zu-Tc-U7T" secondAttribute="trailing" constant="20" id="d2O-1m-axV"/>
+                    <constraint firstItem="BWm-pU-1rm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jpf-CO-oKh"/>
+                    <constraint firstItem="yJ5-bc-DA6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uPf-g7-P1i"/>
+                    <constraint firstAttribute="bottom" secondItem="EeU-J0-KqL" secondAttribute="bottom" constant="1" id="uvj-nC-vng"/>
+                    <constraint firstAttribute="bottom" secondItem="BWm-pU-1rm" secondAttribute="bottom" constant="10" id="vlt-Xv-oup"/>
+                    <constraint firstAttribute="trailing" secondItem="EeU-J0-KqL" secondAttribute="trailing" id="z7u-CU-FZ0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="deleteButton" destination="grZ-9j-Enu" id="YMl-gu-5Fn"/>
+                <outlet property="imageButton" destination="A49-Fi-Uzd" id="UDA-pW-13S"/>
+                <outlet property="lineView" destination="EeU-J0-KqL" id="ctl-2b-8aT"/>
+                <outlet property="noteMessageLabel" destination="YDv-4R-iw2" id="0oI-IG-EUA"/>
+                <outlet property="titleLabel" destination="yJ5-bc-DA6" id="aKb-Ky-teM"/>
+                <outlet property="videoButton" destination="BWm-pU-1rm" id="SPf-Li-h8r"/>
+                <outlet property="voiceButton" destination="9Zu-Tc-U7T" id="EZs-jy-XDF"/>
+            </connections>
+            <point key="canvasLocation" x="803.20000000000005" y="225.78710644677662"/>
+        </tableViewCell>
+    </objects>
+</document>
